@@ -1,5 +1,5 @@
 from django.db import models
-from auth.models import User
+from authentification.models import User
 
 
 class Role(models.Model):
