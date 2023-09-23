@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
+from authentication.managers import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -13,4 +14,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     # last_login по умолчанию в AbstractBaseUser
     # is_superuser по умолчанию в PermissionsMixin
 
+    objects = UserManager()
+
     USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['first_name', 'last_name']
+
+    
