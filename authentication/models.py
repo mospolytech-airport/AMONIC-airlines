@@ -9,7 +9,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(verbose_name='Имя', max_length=50)
     last_name = models.CharField(verbose_name='Фамилия', max_length=150)
     birthday = models.DateField(verbose_name='День рождения', blank=True, null=True)
-    is_active = models.BooleanField(verbose_name='Активность', blank=True, null=True)
+    is_active = models.BooleanField(verbose_name='Активность', blank=True, default=False)
     is_staff = models.BooleanField(verbose_name='Employee status', default=False, help_text='Определяет, может ли пользователь пользоваться инфраструктурой Employee')
     # password по умолчанию в AbstractBaseUser
     # last_login по умолчанию в AbstractBaseUser
