@@ -11,3 +11,14 @@
 
 ### Делаем миграции
 ```./venv/bin/python manage.py migrate```
+
+## Fixtures
+1. Создать фикстуру: это надо создать в ручную fixtures/role.json
+   ```
+   python manage.py dumpdata role --indent 2 --output role/fixtures/role.json
+   ```
+2. Использовать фикстуру:
+   ```
+   python manage.py loaddata role
+   ```
+   
