@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from authentication.managers import UserManager
 
+from office.models import Office
+
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(verbose_name='E-mail', max_length=500, unique=True)
@@ -11,6 +13,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     birthday = models.DateField(verbose_name='День рождения', blank=True, null=True)
     is_active = models.BooleanField(verbose_name='Активность', blank=True, default=False)
     is_staff = models.BooleanField(verbose_name='Employee status', default=False, help_text='Определяет, может ли пользователь пользоваться инфраструктурой Employee')
+    office = models.ForeignKey(Office, on_delete=models.CASCADE, blank=True, null=True)
     # password по умолчанию в AbstractBaseUser
     # last_login по умолчанию в AbstractBaseUser
     # is_superuser по умолчанию в PermissionsMixin
