@@ -71,3 +71,17 @@ class UserViewSet(ModelViewSet):
         response.delete_cookie('refresh')
 
         return response
+
+    @action(methods=['DELETE'], detail=False, permission_classes=[IsAuthenticated], url_path=r'delete/(?P<id>.*)')
+    def delete_user(self, request, id):
+        if not id:
+            return Response({'error': 'not put'})
+
+        try:
+            user = User.objects.get(id=id)
+        except:
+            return Response({'error': 'not put'})
+
+        user.delete()
+        return Response({'message': 'user delete'})
+    
