@@ -12,6 +12,160 @@
     "birthday": null,
     "is_active": true,
     "is_staff": true,
+    "office": null,
+    "role": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$9kd3NiBDk5mSWJuPNA1sVe$418OBAF/nzJLnF/XIsV7xe5I224kRLm9WelS+DnnzkY=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "j.doe@amonic.com",
+    "first_name": "John",
+    "last_name": "Doe",
+    "birthday": "1983-01-13",
+    "is_active": true,
+    "is_staff": false,
+    "office": 1,
+    "role": 1,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$o1wOC649FdE5nJWkpMxbFR$mi9Y2Bi64O2JzWVzeH4c8NOCCRWWInRUli6o4ceKPS4=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "k.omar@amonic.com",
+    "first_name": "Karim",
+    "last_name": "Omar",
+    "birthday": "1980-03-19",
+    "is_active": true,
+    "is_staff": false,
+    "office": 1,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$0OOOf4f4392gqlJsvJ2RtN$z9drbzKv3ERN0hazk4DyN6RBZ4TiRtYfewi6lgwZ92E=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "h.saeed@amonic.com",
+    "first_name": "Hannan",
+    "last_name": "Saeed",
+    "birthday": "1989-12-20",
+    "is_active": true,
+    "is_staff": false,
+    "office": 2,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 7,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$IAqfJzONL6f6S83NShDiDw$rYqJkjZkvAO5vtlc539lFXXKF8JkuMStLgJ7FxdcQBA=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "a.hobart@amonic.com",
+    "first_name": "Andrew",
+    "last_name": "Hobart",
+    "birthday": "1990-01-30",
+    "is_active": true,
+    "is_staff": false,
+    "office": 5,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 8,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$FP8EvF8iAG4ib7UZ0i2cw9$l7YTgbCr1t1gQZkcBF74/X0YbiNCW31UqQuf6Qvk8TI=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "k.anderson@amonic.com",
+    "first_name": "Katrin",
+    "last_name": "Anderson",
+    "birthday": "1992-11-10",
+    "is_active": true,
+    "is_staff": false,
+    "office": 4,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$mxBzmSjmeBmmmo4TJQA6oe$kE2nY7qh/E6Vu9/G/d5yUS+xcXSozj2tgOtgAzipP3U=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "h.wyrick@amonic.com",
+    "first_name": "Hava",
+    "last_name": "Wyrick",
+    "birthday": "1988-08-08",
+    "is_active": true,
+    "is_staff": false,
+    "office": 1,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$FSNDpPIisnLP3WRGOt0HOR$Ej5oasU6fqzj3ts+dCYFCxrmPtC2Q+qOj0LdvJV73P4=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "marie.horn@amonic.com",
+    "first_name": "Marie",
+    "last_name": "Horn",
+    "birthday": "1981-06-04",
+    "is_active": true,
+    "is_staff": false,
+    "office": 3,
+    "role": 2,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authentication.user",
+  "pk": 11,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$iNxsjij1rqFeQv4ytfTTq2$09YzugJi1CB5O0BRKi5XlTdWo/WBOx9orjUb20xx5I0=",
+    "last_login": null,
+    "is_superuser": false,
+    "email": "m.osteen@amonic.com",
+    "first_name": "Milagros",
+    "last_name": "Osteen",
+    "birthday": "1991-02-03",
+    "is_active": true,
+    "is_staff": false,
+    "office": 1,
+    "role": 2,
     "groups": [],
     "user_permissions": []
   }
