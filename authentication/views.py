@@ -81,6 +81,7 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, permission_classes=[IsAuthenticated], url_path='logout')
     def logout(self, request):
+        user = User.objects.get(id=request.user.id)
 
         # Получите текущее время выхода
         current_logout_time = timezone.now()
@@ -89,12 +90,12 @@ class UserViewSet(ModelViewSet):
         login_logout_times = request.user.login_logout_times or {}
         
         # Найдите последнее время входа и добавьте к нему время выхода
-        last_login_time = max(login_logout_times.keys())
+        last_login_time = max(login_logout_times.keys(), default=0)
         login_logout_times[last_login_time] = current_logout_time.isoformat()
         
         # Обновите JSON-поле
-        request.user.login_logout_times = login_logout_times
-        request.user.save()
+        setattr(user, 'login_logout_times', login_logout_times)
+        user.save()
 
         response = Response()
         response.delete_cookie('refresh')
