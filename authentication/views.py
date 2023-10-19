@@ -4,6 +4,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.response import Response
+from django.utils import timezone
 
 from authentication.models import User
 from authentication.serializers import UserSerializer
@@ -47,6 +48,19 @@ class UserViewSet(ModelViewSet):
 
         if not user.is_active:
             raise AuthenticationFailed({'error': 'user is not active'})
+        
+        # Получите текущее время входа
+        current_login_time = timezone.now()
+        
+        # Получите существующие данные времени входа и выхода из JSON-поля
+        login_logout_times = user.login_logout_times or {}
+        
+        # Добавьте время входа в JSON-поле
+        login_logout_times[current_login_time.isoformat()] = None
+        
+        # Обновите JSON-поле
+        user.login_logout_times = login_logout_times
+        user.save()
 
         data = self.serializer_class(user).data
 
@@ -67,6 +81,21 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, permission_classes=[IsAuthenticated], url_path='logout')
     def logout(self, request):
+
+        # Получите текущее время выхода
+        current_logout_time = timezone.now()
+        
+        # Получите существующие данные времени входа и выхода из JSON-поля
+        login_logout_times = request.user.login_logout_times or {}
+        
+        # Найдите последнее время входа и добавьте к нему время выхода
+        last_login_time = max(login_logout_times.keys())
+        login_logout_times[last_login_time] = current_logout_time.isoformat()
+        
+        # Обновите JSON-поле
+        request.user.login_logout_times = login_logout_times
+        request.user.save()
+
         response = Response()
         response.delete_cookie('refresh')
 
