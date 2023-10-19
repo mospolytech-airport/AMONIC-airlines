@@ -3,16 +3,14 @@
   "model": "role.role",
   "pk": 1,
   "fields": {
-    "title": "Administrator",
-    "role_id": null
+    "title": "Administrator"
   }
 },
 {
   "model": "role.role",
   "pk": 2,
   "fields": {
-    "title": "User",
-    "role_id": null
+    "title": "User"
   }
 }
 ]
