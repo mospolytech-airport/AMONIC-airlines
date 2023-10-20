@@ -15,7 +15,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(verbose_name='Активность', blank=True, default=False)
     is_staff = models.BooleanField(verbose_name='Employee status', default=False, help_text='Определяет, может ли пользователь пользоваться инфраструктурой Employee')
     office = models.ForeignKey(Office, on_delete=models.CASCADE, blank=True, null=True)
-    role = models.ForeignKey(Role, on_delete=models.CASCADE, blank=True, null=True)
+    role = models.ForeignKey(Role, on_delete=models.CASCADE, blank=True, null=True, default=2)
     login_logout_times = models.JSONField(
         verbose_name='Время входа и выхода',
         blank=True,
