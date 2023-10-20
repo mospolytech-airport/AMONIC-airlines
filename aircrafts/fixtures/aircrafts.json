@@ -1,0 +1,24 @@
+[
+{
+  "model": "aircrafts.aircraft",
+  "pk": 1,
+  "fields": {
+    "Name": "Boeing 738",
+    "MakeModel": "B738-1950",
+    "TotalSeats": 176,
+    "EconomySeats": 162,
+    "BusinessSeats": 12
+  }
+},
+{
+  "model": "aircrafts.aircraft",
+  "pk": 2,
+  "fields": {
+    "Name": "Boeing 739",
+    "MakeModel": "B739-1954",
+    "TotalSeats": 169,
+    "EconomySeats": 96,
+    "BusinessSeats": 51
+  }
+}
+]

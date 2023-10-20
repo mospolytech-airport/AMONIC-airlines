@@ -1,0 +1,56 @@
+[
+{
+  "model": "airports.airport",
+  "pk": 2,
+  "fields": {
+    "CountryID": 185,
+    "IATACode": "AUH",
+    "Name": "Abu Dhabi"
+  }
+},
+{
+  "model": "airports.airport",
+  "pk": 3,
+  "fields": {
+    "CountryID": 52,
+    "IATACode": "CAI",
+    "Name": "Cairo"
+  }
+},
+{
+  "model": "airports.airport",
+  "pk": 4,
+  "fields": {
+    "CountryID": 13,
+    "IATACode": "BAH",
+    "Name": "Bahrain"
+  }
+},
+{
+  "model": "airports.airport",
+  "pk": 5,
+  "fields": {
+    "CountryID": 194,
+    "IATACode": "ADE",
+    "Name": "Aden"
+  }
+},
+{
+  "model": "airports.airport",
+  "pk": 6,
+  "fields": {
+    "CountryID": 142,
+    "IATACode": "DOH",
+    "Name": "Doha"
+  }
+},
+{
+  "model": "airports.airport",
+  "pk": 7,
+  "fields": {
+    "CountryID": 152,
+    "IATACode": "RUH",
+    "Name": "Riyadh"
+  }
+}
+]

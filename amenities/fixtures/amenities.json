@@ -1,0 +1,98 @@
+[
+{
+  "model": "amenities.amenity",
+  "pk": 1,
+  "fields": {
+    "service": "Extra Blanket",
+    "price": "10.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 2,
+  "fields": {
+    "service": "Next Seat Free",
+    "price": "30.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 3,
+  "fields": {
+    "service": "Two Neighboring Seats Free",
+    "price": "50.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 4,
+  "fields": {
+    "service": "Tablet Rental",
+    "price": "12.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 5,
+  "fields": {
+    "service": "Laptop Rental",
+    "price": "15.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 6,
+  "fields": {
+    "service": "Lounge Access",
+    "price": "25.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 7,
+  "fields": {
+    "service": "Soft Drinks",
+    "price": "0.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 8,
+  "fields": {
+    "service": "Premium Headphones Rental",
+    "price": "5.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 9,
+  "fields": {
+    "service": "Extra Bag",
+    "price": "15.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 10,
+  "fields": {
+    "service": "Fast Checkin Lane",
+    "price": "10.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 11,
+  "fields": {
+    "service": "Wi-Fi 50 mb",
+    "price": "0.0000"
+  }
+},
+{
+  "model": "amenities.amenity",
+  "pk": 12,
+  "fields": {
+    "service": "Wi-Fi 250 mb",
+    "price": "25.0000"
+  }
+}
+]

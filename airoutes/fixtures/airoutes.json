@@ -1,0 +1,142 @@
+[
+{
+  "model": "airoutes.route",
+  "pk": 1,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 4,
+    "Distance": 453,
+    "FlightTime": 64
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 2,
+  "fields": {
+    "DepartureAirport": 4,
+    "ArrivalAirport": 2,
+    "Distance": 455,
+    "FlightTime": 69
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 3,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 5,
+    "Distance": 1636,
+    "FlightTime": 152
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 5,
+  "fields": {
+    "DepartureAirport": 5,
+    "ArrivalAirport": 2,
+    "Distance": 1632,
+    "FlightTime": 150
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 6,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 7,
+    "Distance": 807,
+    "FlightTime": 90
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 7,
+  "fields": {
+    "DepartureAirport": 7,
+    "ArrivalAirport": 2,
+    "Distance": 810,
+    "FlightTime": 89
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 8,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 6,
+    "Distance": 325,
+    "FlightTime": 54
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 9,
+  "fields": {
+    "DepartureAirport": 6,
+    "ArrivalAirport": 2,
+    "Distance": 325,
+    "FlightTime": 54
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 10,
+  "fields": {
+    "DepartureAirport": 6,
+    "ArrivalAirport": 3,
+    "Distance": 2057,
+    "FlightTime": 183
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 11,
+  "fields": {
+    "DepartureAirport": 3,
+    "ArrivalAirport": 6,
+    "Distance": 2050,
+    "FlightTime": 177
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 12,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 3,
+    "Distance": 2381,
+    "FlightTime": 264
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 13,
+  "fields": {
+    "DepartureAirport": 3,
+    "ArrivalAirport": 2,
+    "Distance": 2385,
+    "FlightTime": 274
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 14,
+  "fields": {
+    "DepartureAirport": 2,
+    "ArrivalAirport": 3,
+    "Distance": 2381,
+    "FlightTime": 208
+  }
+},
+{
+  "model": "airoutes.route",
+  "pk": 15,
+  "fields": {
+    "DepartureAirport": 3,
+    "ArrivalAirport": 2,
+    "Distance": 2381,
+    "FlightTime": 211
+  }
+}
+]
