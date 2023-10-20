@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from amenities.models import Amenity
+from amenities.serializers import AmenitySerializer
+
+
+class AmenityViewSet(viewsets.ModelViewSet):
+    serializer_class = AmenitySerializer
+    queryset = Amenity.objects.all()

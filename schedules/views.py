@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import viewsets
 
-# Create your views here.
+from schedules.models import Schedule
+from schedules.serializers import ScheduleSerializer
+
+
+class ScheduleViewSet(viewsets.ModelViewSet):
+    serializer_class = ScheduleSerializer
+    queryset = Schedule.objects.all()
