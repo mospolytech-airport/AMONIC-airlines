@@ -1,0 +1,1510 @@
+[
+{
+  "model": "schedules.schedule",
+  "pk": 1,
+  "fields": {
+    "Date": "2017-10-04",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "620.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 2,
+  "fields": {
+    "Date": "2017-10-04",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "590.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 3,
+  "fields": {
+    "Date": "2017-10-05",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "448.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 4,
+  "fields": {
+    "Date": "2017-10-05",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "500.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 5,
+  "fields": {
+    "Date": "2017-10-06",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "697.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 6,
+  "fields": {
+    "Date": "2017-10-06",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "504.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 7,
+  "fields": {
+    "Date": "2017-10-07",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "449.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 8,
+  "fields": {
+    "Date": "2017-10-07",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "405.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 9,
+  "fields": {
+    "Date": "2017-10-08",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "494.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 10,
+  "fields": {
+    "Date": "2017-10-08",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "429.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 11,
+  "fields": {
+    "Date": "2017-10-09",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "627.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 12,
+  "fields": {
+    "Date": "2017-10-09",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "545.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 13,
+  "fields": {
+    "Date": "2017-10-10",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "637.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 14,
+  "fields": {
+    "Date": "2017-10-10",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "489.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 15,
+  "fields": {
+    "Date": "2017-10-11",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "421.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 16,
+  "fields": {
+    "Date": "2017-10-11",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "476.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 17,
+  "fields": {
+    "Date": "2017-10-12",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "484.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 18,
+  "fields": {
+    "Date": "2017-10-12",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "440.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 19,
+  "fields": {
+    "Date": "2017-10-13",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "464.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 20,
+  "fields": {
+    "Date": "2017-10-13",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "661.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 21,
+  "fields": {
+    "Date": "2017-10-14",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "437.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 22,
+  "fields": {
+    "Date": "2017-10-14",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "493.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 23,
+  "fields": {
+    "Date": "2017-10-15",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "699.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 24,
+  "fields": {
+    "Date": "2017-10-15",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "608.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 25,
+  "fields": {
+    "Date": "2017-10-16",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "417.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 26,
+  "fields": {
+    "Date": "2017-10-16",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "577.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 27,
+  "fields": {
+    "Date": "2017-10-17",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "458.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 28,
+  "fields": {
+    "Date": "2017-10-17",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "429.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 29,
+  "fields": {
+    "Date": "2017-10-18",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "686.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 30,
+  "fields": {
+    "Date": "2017-10-18",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "692.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 31,
+  "fields": {
+    "Date": "2017-10-19",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "482.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 32,
+  "fields": {
+    "Date": "2017-10-19",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "612.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 33,
+  "fields": {
+    "Date": "2017-10-20",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "620.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 34,
+  "fields": {
+    "Date": "2017-10-20",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "432.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 35,
+  "fields": {
+    "Date": "2017-10-21",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "480.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 36,
+  "fields": {
+    "Date": "2017-10-21",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "582.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 37,
+  "fields": {
+    "Date": "2017-10-22",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "453.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 38,
+  "fields": {
+    "Date": "2017-10-22",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "537.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 39,
+  "fields": {
+    "Date": "2017-10-23",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "537.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 40,
+  "fields": {
+    "Date": "2017-10-23",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "578.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 41,
+  "fields": {
+    "Date": "2017-10-24",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "571.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 42,
+  "fields": {
+    "Date": "2017-10-24",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "532.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 43,
+  "fields": {
+    "Date": "2017-10-25",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "544.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 44,
+  "fields": {
+    "Date": "2017-10-25",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "634.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 45,
+  "fields": {
+    "Date": "2017-10-26",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "494.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 46,
+  "fields": {
+    "Date": "2017-10-26",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "625.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 47,
+  "fields": {
+    "Date": "2017-10-27",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "406.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 48,
+  "fields": {
+    "Date": "2017-10-27",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "578.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 49,
+  "fields": {
+    "Date": "2017-10-28",
+    "Time": "17:00:00",
+    "Aircraft": 1,
+    "Route": 1,
+    "EconomyPrice": "537.00",
+    "Confirmed": true,
+    "FlightNumber": "49"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 50,
+  "fields": {
+    "Date": "2017-10-28",
+    "Time": "21:09:00",
+    "Aircraft": 1,
+    "Route": 2,
+    "EconomyPrice": "440.00",
+    "Confirmed": true,
+    "FlightNumber": "50"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 51,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "983.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 52,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "998.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 53,
+  "fields": {
+    "Date": "2017-12-06",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "850.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 54,
+  "fields": {
+    "Date": "2017-12-06",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "902.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 55,
+  "fields": {
+    "Date": "2017-12-08",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "939.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 56,
+  "fields": {
+    "Date": "2017-12-08",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "1024.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 57,
+  "fields": {
+    "Date": "2017-12-10",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "837.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 58,
+  "fields": {
+    "Date": "2017-12-10",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "948.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 59,
+  "fields": {
+    "Date": "2017-12-12",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "926.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 60,
+  "fields": {
+    "Date": "2017-12-12",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "973.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 61,
+  "fields": {
+    "Date": "2017-12-14",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "838.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 62,
+  "fields": {
+    "Date": "2017-12-14",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "880.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 63,
+  "fields": {
+    "Date": "2017-12-16",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "762.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 64,
+  "fields": {
+    "Date": "2017-12-16",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "892.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 65,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "781.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 66,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "1028.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 67,
+  "fields": {
+    "Date": "2017-12-20",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "865.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 68,
+  "fields": {
+    "Date": "2017-12-20",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "1009.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 69,
+  "fields": {
+    "Date": "2017-12-22",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "1052.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 70,
+  "fields": {
+    "Date": "2017-12-22",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "830.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 71,
+  "fields": {
+    "Date": "2017-12-24",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "785.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 72,
+  "fields": {
+    "Date": "2017-12-24",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "1006.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 73,
+  "fields": {
+    "Date": "2017-12-26",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "816.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 74,
+  "fields": {
+    "Date": "2017-12-26",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "773.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 75,
+  "fields": {
+    "Date": "2017-12-28",
+    "Time": "06:25:00",
+    "Aircraft": 1,
+    "Route": 6,
+    "EconomyPrice": "811.00",
+    "Confirmed": true,
+    "FlightNumber": "75"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 76,
+  "fields": {
+    "Date": "2017-12-28",
+    "Time": "09:20:00",
+    "Aircraft": 1,
+    "Route": 7,
+    "EconomyPrice": "779.00",
+    "Confirmed": true,
+    "FlightNumber": "76"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 77,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "04:55:00",
+    "Aircraft": 2,
+    "Route": 8,
+    "EconomyPrice": "313.00",
+    "Confirmed": true,
+    "FlightNumber": "89"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 78,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "06:15:00",
+    "Aircraft": 2,
+    "Route": 10,
+    "EconomyPrice": "2283.00",
+    "Confirmed": true,
+    "FlightNumber": "90"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 79,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "11:50:00",
+    "Aircraft": 2,
+    "Route": 11,
+    "EconomyPrice": "2037.00",
+    "Confirmed": true,
+    "FlightNumber": "91"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 80,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "15:40:00",
+    "Aircraft": 2,
+    "Route": 9,
+    "EconomyPrice": "329.00",
+    "Confirmed": true,
+    "FlightNumber": "92"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 81,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "04:55:00",
+    "Aircraft": 2,
+    "Route": 8,
+    "EconomyPrice": "334.00",
+    "Confirmed": true,
+    "FlightNumber": "89"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 82,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "06:15:00",
+    "Aircraft": 2,
+    "Route": 10,
+    "EconomyPrice": "2268.00",
+    "Confirmed": true,
+    "FlightNumber": "90"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 83,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "11:50:00",
+    "Aircraft": 2,
+    "Route": 11,
+    "EconomyPrice": "2090.00",
+    "Confirmed": true,
+    "FlightNumber": "91"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 84,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "15:40:00",
+    "Aircraft": 2,
+    "Route": 9,
+    "EconomyPrice": "508.00",
+    "Confirmed": true,
+    "FlightNumber": "92"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 85,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "04:55:00",
+    "Aircraft": 2,
+    "Route": 8,
+    "EconomyPrice": "347.00",
+    "Confirmed": true,
+    "FlightNumber": "89"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 86,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "06:15:00",
+    "Aircraft": 2,
+    "Route": 10,
+    "EconomyPrice": "2024.00",
+    "Confirmed": true,
+    "FlightNumber": "90"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 87,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "11:50:00",
+    "Aircraft": 2,
+    "Route": 11,
+    "EconomyPrice": "2167.00",
+    "Confirmed": true,
+    "FlightNumber": "91"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 88,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "15:40:00",
+    "Aircraft": 2,
+    "Route": 9,
+    "EconomyPrice": "462.00",
+    "Confirmed": true,
+    "FlightNumber": "92"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 89,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "04:55:00",
+    "Aircraft": 2,
+    "Route": 8,
+    "EconomyPrice": "404.00",
+    "Confirmed": true,
+    "FlightNumber": "89"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 90,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "06:15:00",
+    "Aircraft": 2,
+    "Route": 10,
+    "EconomyPrice": "2125.00",
+    "Confirmed": true,
+    "FlightNumber": "90"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 91,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "11:50:00",
+    "Aircraft": 2,
+    "Route": 11,
+    "EconomyPrice": "2128.00",
+    "Confirmed": true,
+    "FlightNumber": "91"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 92,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "15:40:00",
+    "Aircraft": 2,
+    "Route": 9,
+    "EconomyPrice": "295.00",
+    "Confirmed": true,
+    "FlightNumber": "92"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 93,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1726.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 94,
+  "fields": {
+    "Date": "2017-12-04",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1589.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 95,
+  "fields": {
+    "Date": "2017-12-07",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1606.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 96,
+  "fields": {
+    "Date": "2017-12-07",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1850.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 97,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1646.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 98,
+  "fields": {
+    "Date": "2017-12-11",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1596.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 99,
+  "fields": {
+    "Date": "2017-12-14",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1738.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 100,
+  "fields": {
+    "Date": "2017-12-14",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1627.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 101,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1708.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 102,
+  "fields": {
+    "Date": "2017-12-18",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1865.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 103,
+  "fields": {
+    "Date": "2017-12-21",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1677.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 104,
+  "fields": {
+    "Date": "2017-12-21",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1695.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 105,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1699.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 106,
+  "fields": {
+    "Date": "2017-12-25",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1865.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 107,
+  "fields": {
+    "Date": "2017-12-28",
+    "Time": "19:20:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "1769.00",
+    "Confirmed": true,
+    "FlightNumber": "107"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 108,
+  "fields": {
+    "Date": "2017-12-28",
+    "Time": "23:20:00",
+    "Aircraft": 2,
+    "Route": 5,
+    "EconomyPrice": "1664.00",
+    "Confirmed": true,
+    "FlightNumber": "108"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 109,
+  "fields": {
+    "Date": "2017-12-06",
+    "Time": "15:00:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2513.00",
+    "Confirmed": true,
+    "FlightNumber": "115"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 110,
+  "fields": {
+    "Date": "2017-12-06",
+    "Time": "20:35:00",
+    "Aircraft": 2,
+    "Route": 15,
+    "EconomyPrice": "2368.00",
+    "Confirmed": true,
+    "FlightNumber": "110"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 111,
+  "fields": {
+    "Date": "2017-12-13",
+    "Time": "15:00:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2331.00",
+    "Confirmed": true,
+    "FlightNumber": "115"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 112,
+  "fields": {
+    "Date": "2017-12-13",
+    "Time": "20:35:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2551.00",
+    "Confirmed": true,
+    "FlightNumber": "116"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 113,
+  "fields": {
+    "Date": "2017-12-20",
+    "Time": "15:00:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2554.00",
+    "Confirmed": true,
+    "FlightNumber": "115"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 114,
+  "fields": {
+    "Date": "2017-12-20",
+    "Time": "20:35:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2488.00",
+    "Confirmed": true,
+    "FlightNumber": "116"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 115,
+  "fields": {
+    "Date": "2017-12-27",
+    "Time": "15:00:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2501.00",
+    "Confirmed": true,
+    "FlightNumber": "115"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 116,
+  "fields": {
+    "Date": "2017-12-27",
+    "Time": "20:35:00",
+    "Aircraft": 2,
+    "Route": 14,
+    "EconomyPrice": "2582.00",
+    "Confirmed": true,
+    "FlightNumber": "116"
+  }
+}
+]

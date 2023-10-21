@@ -21,6 +21,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         blank=True,
         null=True,
     )
+
     # password по умолчанию в AbstractBaseUser
     # last_login по умолчанию в AbstractBaseUser
     # is_superuser по умолчанию в PermissionsMixin
@@ -29,5 +30,11 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name']
+
+    # Модель для ошибок или сбоев
+class ErrorLog(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='error_logs')
+    error_msg = models.TextField(verbose_name='Unsuccessful logout reason')
+    timestamp = models.DateTimeField(auto_now_add=True)
 
     

@@ -1,0 +1,20 @@
+[
+{
+  "model": "amenitiesTickets.amenityticket",
+  "pk": 1,
+  "fields": {
+    "amenity": 1,
+    "ticket": 9447,
+    "price": "10.0000"
+  }
+},
+{
+  "model": "amenitiesTickets.amenityticket",
+  "pk": 2,
+  "fields": {
+    "amenity": 8,
+    "ticket": 9447,
+    "price": "5.0000"
+  }
+}
+]

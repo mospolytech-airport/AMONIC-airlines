@@ -1,0 +1,122 @@
+[
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 1,
+  "fields": {
+    "cabin_type": 2,
+    "amenity": 1
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 2,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 1
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 3,
+  "fields": {
+    "cabin_type": 2,
+    "amenity": 4
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 4,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 4
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 5,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 5
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 6,
+  "fields": {
+    "cabin_type": 2,
+    "amenity": 6
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 7,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 6
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 8,
+  "fields": {
+    "cabin_type": 1,
+    "amenity": 7
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 9,
+  "fields": {
+    "cabin_type": 2,
+    "amenity": 7
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 10,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 7
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 11,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 8
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 12,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 9
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 13,
+  "fields": {
+    "cabin_type": 1,
+    "amenity": 11
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 14,
+  "fields": {
+    "cabin_type": 2,
+    "amenity": 11
+  }
+},
+{
+  "model": "amenitiesCabinType.cabintypeamenity",
+  "pk": 15,
+  "fields": {
+    "cabin_type": 3,
+    "amenity": 12
+  }
+}
+]

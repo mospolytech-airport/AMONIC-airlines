@@ -47,7 +47,16 @@ INSTALLED_APPS = [
     'authentication',
     'country',
     'office',
-    'role'
+    'role',
+    'airports',
+    'airoutes',
+    'aircrafts',
+    'schedules',
+    'tickets',
+    'cabintypes',
+    'amenities',
+    'amenitiesCabinType',
+    'amenitiesTickets',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,23 @@
+[
+{
+  "model": "cabintypes.cabintype",
+  "pk": 1,
+  "fields": {
+    "name": "Economy"
+  }
+},
+{
+  "model": "cabintypes.cabintype",
+  "pk": 2,
+  "fields": {
+    "name": "Business"
+  }
+},
+{
+  "model": "cabintypes.cabintype",
+  "pk": 3,
+  "fields": {
+    "name": "First Class"
+  }
+}
+]
