@@ -150,7 +150,7 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['GET'], detail=False, permission_classes=[IsAdminUser], url_path='users')
     def get_users(self, request):
-        users = User.objects.all()
+        users = User.objects.all().exclude(email="admin@admin.com")
 
         data = UserSerializer(users, many=True).data
 
