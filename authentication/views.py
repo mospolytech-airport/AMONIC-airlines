@@ -81,6 +81,7 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, permission_classes=[IsAuthenticated], url_path='logout')
     def logout(self, request):
+        error = request.data.get('error')
         user = User.objects.get(id=request.user.id)
 
         # Получите текущее время выхода
@@ -91,7 +92,10 @@ class UserViewSet(ModelViewSet):
         
         # Найдите последнее время входа и добавьте к нему время выхода
         last_login_time = max(login_logout_times.keys(), default=0)
-        login_logout_times[last_login_time] = current_logout_time.isoformat()
+        login_logout_times[last_login_time] = {
+            'logout_time': current_logout_time.isoformat(),
+            'error': error
+        }
         
         # Обновите JSON-поле
         setattr(user, 'login_logout_times', login_logout_times)
@@ -122,6 +126,7 @@ class UserViewSet(ModelViewSet):
         last_name = request.data.get('last_name')
         office = request.data.get('office')
         role = request.data.get('role')
+        login_logout_times = request.data.get('login_logout_times')
 
         if email is None:
             raise ValidationError({ 'error': 'email must not be empty' })
@@ -135,6 +140,7 @@ class UserViewSet(ModelViewSet):
         if last_name: setattr(user, 'last_name', last_name)
         if office: setattr(user, 'office', office)
         if role: setattr(user, 'role', role)
+        if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
 
         user.save()
 
