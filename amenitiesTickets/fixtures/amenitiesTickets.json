@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "amenity": 1,
-    "ticket": 9447,
+    "ticket": 9445,
     "price": "10.0000"
   }
 },
@@ -13,7 +13,7 @@
   "pk": 2,
   "fields": {
     "amenity": 8,
-    "ticket": 9447,
+    "ticket": 9445,
     "price": "5.0000"
   }
 }
