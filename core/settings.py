@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'amenities',
     'amenitiesCabinType',
     'amenitiesTickets',
+    'survey',
 ]
 
 MIDDLEWARE = [
