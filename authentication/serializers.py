@@ -24,3 +24,12 @@ class UserSerializer(serializers.ModelSerializer):
         instance.save()
 
         return instance
+
+    def to_representation(self, instance):
+        rep = super(UserSerializer, self).to_representation(instance)
+        try: 
+            rep['office'] = instance.office.title
+            rep['role'] = instance.role.title
+            return rep
+        except:
+            return rep

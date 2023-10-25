@@ -8,6 +8,8 @@ from django.utils import timezone
 
 from authentication.models import User
 from authentication.serializers import UserSerializer
+from office.models import Office
+from role.models import Role
 
 
 class UserViewSet(ModelViewSet):
@@ -138,8 +140,8 @@ class UserViewSet(ModelViewSet):
 
         if first_name: setattr(user, 'first_name', first_name)
         if last_name: setattr(user, 'last_name', last_name)
-        if office: setattr(user, 'office', office)
-        if role: setattr(user, 'role', role)
+        if office: setattr(user, 'office', Office.objects.get(title=office))
+        if role: setattr(user, 'role', Role.objects.get(title=role))
         if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
 
         user.save()
@@ -150,7 +152,7 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['GET'], detail=False, permission_classes=[IsAdminUser], url_path='users')
     def get_users(self, request):
-        users = User.objects.all()
+        users = User.objects.all().exclude(email="admin@admin.com")
 
         data = UserSerializer(users, many=True).data
 
