@@ -129,6 +129,7 @@ class UserViewSet(ModelViewSet):
         office = request.data.get('office')
         role = request.data.get('role')
         login_logout_times = request.data.get('login_logout_times')
+        is_active = request.data.get('is_active')
 
         if email is None:
             raise ValidationError({ 'error': 'email must not be empty' })
@@ -142,6 +143,8 @@ class UserViewSet(ModelViewSet):
         if last_name: setattr(user, 'last_name', last_name)
         if office: setattr(user, 'office', Office.objects.get(title=office))
         if role: setattr(user, 'role', Role.objects.get(title=role))
+        if is_active is not None:
+            user.is_active = is_active
         if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
 
         user.save()
