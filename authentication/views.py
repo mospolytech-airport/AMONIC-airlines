@@ -8,6 +8,7 @@ from django.utils import timezone
 
 from authentication.models import User
 from authentication.serializers import UserSerializer
+from office.models import Office
 from role.models import Role
 
 
@@ -140,13 +141,8 @@ class UserViewSet(ModelViewSet):
 
         if first_name: setattr(user, 'first_name', first_name)
         if last_name: setattr(user, 'last_name', last_name)
-        if office: setattr(user, 'office', office)
-        if role is not None:
-            try:
-                role = Role.objects.get(title=role)
-                user.role = role
-            except Role.DoesNotExist:
-                raise NotFound({'error': 'Role with this TITLE was not found'})
+        if office: setattr(user, 'office', Office.objects.get(title=office))
+        if role: setattr(user, 'role', Role.objects.get(title=role))
         if is_active is not None:
             user.is_active = is_active
         if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
