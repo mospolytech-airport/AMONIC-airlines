@@ -1,9 +1,13 @@
 from rest_framework import serializers
 
 from authentication.models import User
-
+from role.models import Role
+from office.models import Office
 
 class UserSerializer(serializers.ModelSerializer):
+    office = serializers.SlugRelatedField(slug_field='title', queryset=Office.objects.all())
+    role = serializers.SlugRelatedField(slug_field='title', queryset=Role.objects.all())
+
     class Meta:
         model = User
         fields = '__all__'
@@ -24,12 +28,3 @@ class UserSerializer(serializers.ModelSerializer):
         instance.save()
 
         return instance
-
-    def to_representation(self, instance):
-        rep = super(UserSerializer, self).to_representation(instance)
-        try: 
-            rep['office'] = instance.office.title
-            rep['role'] = instance.role.title
-            return rep
-        except:
-            return rep

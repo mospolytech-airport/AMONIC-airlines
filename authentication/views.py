@@ -8,6 +8,7 @@ from django.utils import timezone
 
 from authentication.models import User
 from authentication.serializers import UserSerializer
+from role.models import Role
 
 
 class UserViewSet(ModelViewSet):
@@ -127,6 +128,7 @@ class UserViewSet(ModelViewSet):
         office = request.data.get('office')
         role = request.data.get('role')
         login_logout_times = request.data.get('login_logout_times')
+        is_active = request.data.get('is_active')
 
         if email is None:
             raise ValidationError({ 'error': 'email must not be empty' })
@@ -139,7 +141,14 @@ class UserViewSet(ModelViewSet):
         if first_name: setattr(user, 'first_name', first_name)
         if last_name: setattr(user, 'last_name', last_name)
         if office: setattr(user, 'office', office)
-        if role: setattr(user, 'role', role)
+        if role is not None:
+            try:
+                role = Role.objects.get(title=role)
+                user.role = role
+            except Role.DoesNotExist:
+                raise NotFound({'error': 'Role with this TITLE was not found'})
+        if is_active is not None:
+            user.is_active = is_active
         if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
 
         user.save()
