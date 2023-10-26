@@ -141,10 +141,15 @@ class UserViewSet(ModelViewSet):
 
         if first_name: setattr(user, 'first_name', first_name)
         if last_name: setattr(user, 'last_name', last_name)
+<<<<<<< Updated upstream
         if office: setattr(user, 'office', Office.objects.get(title=office))
         if role: setattr(user, 'role', Role.objects.get(title=role))
         if is_active is not None:
             user.is_active = is_active
+=======
+        if office: setattr(user, 'office', Office.objects.get(title=office.get('title')))
+        if role: setattr(user, 'role', Role.objects.get(title=role.capitalize()))
+>>>>>>> Stashed changes
         if login_logout_times is not None: setattr(user, 'login_logout_times', login_logout_times)
 
         user.save()
