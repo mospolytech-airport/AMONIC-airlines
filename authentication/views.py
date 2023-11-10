@@ -18,6 +18,9 @@ class UserViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, url_path='register')
     def register(self, request):
+        request.data['role'] = request.data.get('role') or 'User'
+        request.data['office'] = Office.objects.get(id=request.data.get('office')).title
+
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
