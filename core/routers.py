@@ -6,6 +6,7 @@ from role.views import RoleViewSet
 from country.views import CountryViewSet
 from schedules.views import ScheduleViewSet
 from survey.views import SurveyViewSet
+from airports.views import AirportViewSet
 
 router = DefaultRouter()
 
@@ -15,3 +16,4 @@ router.register('role', RoleViewSet)
 router.register('country', CountryViewSet)
 router.register('schedules', ScheduleViewSet)
 router.register('survey', SurveyViewSet)
+router.register('airport', AirportViewSet)
