@@ -2,6 +2,7 @@ from django.db import models
 from aircrafts.models import Aircraft
 from airoutes.models import Route
 
+
 class Schedule(models.Model):
     Date = models.DateField()
     Time = models.TimeField()

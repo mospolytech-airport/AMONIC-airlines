@@ -1506,5 +1506,31 @@
     "Confirmed": true,
     "FlightNumber": "116"
   }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 117,
+  "fields": {
+    "Date": "2023-11-11",
+    "Time": "11:00:00",
+    "Aircraft": 2,
+    "Route": 2,
+    "EconomyPrice": "2582.00",
+    "Confirmed": true,
+    "FlightNumber": "116"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 118,
+  "fields": {
+    "Date": "2023-11-11",
+    "Time": "15:00:00",
+    "Aircraft": 2,
+    "Route": 3,
+    "EconomyPrice": "2582.00",
+    "Confirmed": true,
+    "FlightNumber": "116"
+  }
 }
 ]
