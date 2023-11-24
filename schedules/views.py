@@ -1,7 +1,7 @@
 import logging
 import pandas as pd
 import math
-from datetime import datetime
+from datetime import datetime, time
 
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
@@ -43,12 +43,12 @@ class ScheduleViewSet(viewsets.ModelViewSet):
                         continue
                     
                     row['Date'] = pd.to_datetime(row['Date']).date()
-                    row['Time'] = pd.to_datetime(row['Time']).time()
+                    if (type(row['Time']) is str):
+                        row['Time'] = time.fromisoformat(row['Time'])
                     aircraft = int(row['Aircraft'])
                     route = row['Route']
 
                     try:
-                        
                         aircraft = Aircraft.objects.get(id=aircraft)
                         route = Route.objects.get(id=route)
                     except Aircraft.DoesNotExist:
@@ -68,12 +68,13 @@ class ScheduleViewSet(viewsets.ModelViewSet):
                         'EconomyPrice': row['EconomyPrice'],
                         'FlightNumber': row['FlightNumber'],
                     }
+
                     duplicated = Schedule.objects.get(id=row['id'])
                     if duplicated:
                         serializer = ScheduleSerializer(duplicated, data=schedule_data)
                         if (duplicated.Aircraft.id == aircraft.id 
                                 and duplicated.Route.id == route.id 
-                                and duplicated.Confirmed == row['Confirmed'] 
+                                and duplicated.Confirmed == bool(row['Confirmed']) 
                                 and duplicated.Date == row['Date'] 
                                 and duplicated.Time == row['Time'] 
                                 and int(duplicated.EconomyPrice) == int(row['EconomyPrice']) 
@@ -81,8 +82,19 @@ class ScheduleViewSet(viewsets.ModelViewSet):
                             duplicate_count += 1
                             continue
                         if serializer.is_valid():
-                            serializer.save()
+                            # print(row['id'])
+                            # print(duplicated.Aircraft.id == aircraft.id )
+                            # print(duplicated.Route.id == route.id )
+                            # print(duplicated.Confirmed == bool(row['Confirmed']) )
+                            # print(duplicated.Date == row['Date'])
+                            # print(type(duplicated.Time), type(row['Time']))
+                            # print(int(duplicated.EconomyPrice) == int(row['EconomyPrice']) )
+                            # print(int(float(duplicated.FlightNumber)) == int(float(row['FlightNumber'])))
+                            serializer.update(duplicated, schedule_data)
+                            
                             success_count += 1
+                            continue
+
                     serializer = ScheduleSerializer(data=schedule_data)
                     if serializer.is_valid():
                         serializer.save()
