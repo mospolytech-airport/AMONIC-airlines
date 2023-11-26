@@ -1,4 +1,5 @@
 from django.forms import model_to_dict
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -6,6 +7,8 @@ from django.core.exceptions import ObjectDoesNotExist
 
 from aircrafts.models import Aircraft
 from airoutes.models import Route
+from cabintypes.models import CabinType
+from country.models import Country
 from schedules.models import Schedule
 from airports.models import Airport
 from tickets.models import Ticket
@@ -17,6 +20,44 @@ class TicketViewSet(ModelViewSet):
     serializer_class = TicketSerializer
     outbound_schedules: list[Schedule] = []
     return_schedules: list[Schedule] = []
+
+    @action(methods=['POST'], detail=False, url_path='booking', permission_classes=[IsAuthenticated])
+    def booking(self, request):
+        user = request.user
+        schedule_id = request.data.get('schedule_id')
+        cabin_type = request.data.get('cabin_type')
+        first_name = request.data.get('first_name')
+        last_name = request.data.get('last_name')
+        phone = request.data.get('phone')
+        passport_number = request.data.get('passport_number')
+        country = request.data.get('country')
+        paid_using = request.data.get('paid_using')
+
+        email = user.email
+        schedule = Schedule.objects.get(id=schedule_id)
+        cabin_type = CabinType.objects.get(name=cabin_type.title())
+        country = Country.objects.get(name=country)
+        passport_country_id = self.get_value(country, 'id')
+
+        ticket = Ticket.objects.create(
+            user=user,
+            schedule=schedule,
+            cabin_type=cabin_type,
+            first_name=first_name,
+            last_name=last_name,
+            email=email,
+            phone=phone,
+            passport_number=passport_number,
+            passport_country_id=passport_country_id,
+            booking_reference='NCADIG',
+            confirmed=True
+        )
+
+        ticket.save()
+        data = TicketSerializer(ticket).data
+
+        return Response({'ticket': data})
+
 
     def get_value(self, model, key):
         try:
@@ -60,16 +101,16 @@ class TicketViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, url_path='search')
     def search_flights(self, request):
-        # user = User.objects.get(id=request.user.id)
         from_airport = request.data.get('from_airport')
         to_airport = request.data.get('to_airport')
-        cabin_type = request.data.get('cabin_type')
+        cabin_type = request.data.get('cabin_type') or 'economy'
         outbound_date = request.data.get('outbound_date')
         return_date = request.data.get('return_date')
 
         is_economy = cabin_type == 'economy'
 
         self.outbound_schedules = []
+        self.return_schedules = []
 
         try:
             self.search_schedule(from_airport, to_airport, outbound_date, self.outbound_schedules)
@@ -77,8 +118,6 @@ class TicketViewSet(ModelViewSet):
             return Response({"error": e})
 
         if return_date:
-            self.return_schedules = []
-
             try:
                 self.search_schedule(to_airport, from_airport, return_date, self.return_schedules)
             except Exception as e:
@@ -133,7 +172,8 @@ class TicketViewSet(ModelViewSet):
                 'time': times,
                 'flight_number': flight_numbers,
                 'price': price,
-                'number_of_stops': len(flight_numbers)
+                'cabin_type': 'Economy' if is_economy else 'Business',
+                'number_of_stops': len(flight_numbers) - 1
             }
 
         filter(filter_schedule_by_class, self.outbound_schedules)

@@ -1528,7 +1528,33 @@
     "Time": "15:00:00",
     "Aircraft": 2,
     "Route": 3,
-    "EconomyPrice": "2582.00",
+    "EconomyPrice": "2262.00",
+    "Confirmed": true,
+    "FlightNumber": "123"
+  }
+},
+  {
+  "model": "schedules.schedule",
+  "pk": 119,
+  "fields": {
+    "Date": "2023-11-17",
+    "Time": "12:00:00",
+    "Aircraft": 2,
+    "Route": 16,
+    "EconomyPrice": "3582.00",
+    "Confirmed": true,
+    "FlightNumber": "123"
+  }
+},
+{
+  "model": "schedules.schedule",
+  "pk": 120,
+  "fields": {
+    "Date": "2023-11-17",
+    "Time": "17:00:00",
+    "Aircraft": 2,
+    "Route": 17,
+    "EconomyPrice": "1882.00",
     "Confirmed": true,
     "FlightNumber": "116"
   }
