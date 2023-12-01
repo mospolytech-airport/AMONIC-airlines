@@ -21,6 +21,15 @@ class TicketViewSet(ModelViewSet):
     outbound_schedules: list[Schedule] = []
     return_schedules: list[Schedule] = []
 
+    @action(methods=['POST'], detail=False, url_path='searchbooking')
+    def search(self, request):
+        fuck = []
+        booking_reference = request.data.get('booking_reference')
+        tickets = Ticket.objects.filter(booking_reference=booking_reference)
+        for ticket in tickets:
+            fuck.append(TicketSerializer(ticket).data)
+        return Response({'ticket': fuck})
+
     @action(methods=['POST'], detail=False, url_path='booking', permission_classes=[IsAuthenticated])
     def booking(self, request):
         user = request.user
