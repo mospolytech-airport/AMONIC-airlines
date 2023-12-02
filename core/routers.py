@@ -8,6 +8,10 @@ from schedules.views import ScheduleViewSet
 from survey.views import SurveyViewSet
 from airports.views import AirportViewSet
 from tickets.views import TicketViewSet
+from amenities.views import AmenityViewSet
+from cabintypes.views import CabinTypeViewSet
+from amenitiesCabinType.views import CabinTypeAmenityViewSet
+from amenitiesTickets.views import AmenityTicketViewSet
 
 router = DefaultRouter()
 
@@ -19,3 +23,7 @@ router.register('schedules', ScheduleViewSet)
 router.register('survey', SurveyViewSet)
 router.register('airport', AirportViewSet)
 router.register('tickets', TicketViewSet)
+router.register('amenity', AmenityViewSet)
+router.register('cabintype', CabinTypeViewSet)
+router.register('amenity-cabin', CabinTypeAmenityViewSet)
+router.register('amenity-ticket', AmenityTicketViewSet)
