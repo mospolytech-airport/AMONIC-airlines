@@ -23,12 +23,12 @@ class TicketViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=False, url_path='searchbooking')
     def search(self, request):
-        fuck = []
+        fuckt = []
         booking_reference = request.data.get('booking_reference')
         tickets = Ticket.objects.filter(booking_reference=booking_reference)
         for ticket in tickets:
-            fuck.append(TicketSerializer(ticket).data)
-        return Response({'ticket': fuck})
+            fuckt.append(TicketSerializer(ticket).data)
+        return Response({'ticket': fuckt})
 
     @action(methods=['POST'], detail=False, url_path='booking', permission_classes=[IsAuthenticated])
     def booking(self, request):
